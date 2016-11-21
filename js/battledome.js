@@ -4,10 +4,10 @@
 let Battledome = Battledome =>
 
 	Battledome.Player = function(name) {
-		name
-		skill
-		health
-		damage
+		this.name = "Player 1";
+		this.skill = null;
+		this.health = null
+		this.damage = null;
 	};
 
 
