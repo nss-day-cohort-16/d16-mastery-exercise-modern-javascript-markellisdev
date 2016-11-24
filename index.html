@@ -7,6 +7,8 @@
         <title>Mastery Exercise - Modern Web Apps</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/quiz.css">
+
+
     </head>
     <body>
 	  	<article id="game-container">
@@ -20,27 +22,27 @@
 				      <div class="card__prompt col-sm-4">
 				        <div class="texter">PLEASE NAME YOUR BOT!</div>
 				        <div class="field">
-				          <input id="checkout" type="text" autofocus="true" id="player1-name" class="field__textinput">
+				          <input type="text" autofocus="true" id="player1-name" class="field__textinput">
 				        </div>
 						<select class="selectpicker">
 							<optgroup label="Drone">
-							<option>Function 1</option>
-							<option>Function 2</option>
+							<option>Luna_X_2000</option>
+							<option>MQ9_Reaper</option>
 							</optgroup>
 							<optgroup label="Bipedal">
-							<option>Function 1</option>
-							<option>Function 2</option>
+							<option>Megabot</option>
+							<option>R2D2</option>
 							</optgroup>
 							<optgroup label="ATV">
-							<option>Function 1</option>
-							<option>Function 2</option>
+							<option>Roomba980</option>
+							<option>GrizzlyRUV</option>
 							</optgroup>
 						</select>
 				      </div>
 				      <div class="card__prompt col-sm-4 col-sm-offset-4">
 				        <div class="texter text-nowrap">PLEASE NAME THE CHALLENGER!</div>
 				        <div class="field">
-				          <input id="checkout" type="text" autofocus="true" id="player2-name" class="field__textinput">
+				          <input type="text" autofocus="true" id="player2-name" class="field__textinput">
 				        </div>
 						<select class="selectpicker">
 							<optgroup label="Drone">
@@ -61,7 +63,7 @@
 			      	<div class="form-group"></div> <!--To add space vertically-->
 			      	<div class="row">
 				      <div class="card__button text-center">
-				        <a class="btn btn-md btn--red clicky" href="#" next="card--class">
+				        <a class="btn btn-md btn--red clicky" id="beginAttack" href="#" next="card--class">
 				          <span class="btn__prompt"></span>
 				          <span class="btn__text">ATTACK!</span>
 				        </a>
@@ -75,8 +77,10 @@
 
 	  	</article>
 
+		<script src="/dist/jquery.min.js"></script>
+        <script src="dist/bundle.js"></script>
+        <script src="dist/js/bootstrap.min.js"></script>
 
-        <script src="js/battledome.js"></script>
-        <script src="js/Bots.js"></script>
+
     </body>
 </html>
