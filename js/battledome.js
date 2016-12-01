@@ -25,12 +25,16 @@ $("#beginAttack").click( function(e) {
 	let name1 = $("#player1-name").val();
 	let name2 = $("#player2-name").val();
 	let p1model = $("#player1-model").val();
-	let p1 = new Robot.Player();
-	let p2 = new Robot.Player();
-	p1.name = name1;
+
+	let p1 = new Robot.Player[p1model]();
+	// let p2 = new Robot.p2model();
+// 	p1.name = name1;
+// 	p2.name = name2;
+console.log("player 1 model", p1);
+
 
 	console.log("player1", p1);
-	console.log("player 1 model", p1model);
+
 
 
 	let nextCard = $(this).attr("next");
