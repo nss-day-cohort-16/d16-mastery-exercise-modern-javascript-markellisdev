@@ -4,12 +4,6 @@
 var Robot = require('./Bots.js');
 var $ = require('jquery');
 
-// let testPlayer = new Player("Jim");
-
-// console.log("testPlayer", testPlayer);
-	var drone = new Robot.Player.Drone("Frank");
-	console.log("Drone", drone);
-
 var debug=false;
 
 function comment(msg) {
@@ -25,15 +19,15 @@ $("#beginAttack").click( function(e) {
 	let name1 = $("#player1-name").val();
 	let name2 = $("#player2-name").val();
 	let p1model = $("#player1-model").val();
+	let p2model = $("#player2-model").val();
+	let p1 = new Robot[p1model]();
+	let p2 = new Robot[p2model]();
+	p1.name = name1;
+	p2.name = name2;
+	console.log("player 1 model", p1);
 
-	let p1 = new Robot.Player[p1model]();
-	// let p2 = new Robot.p2model();
-// 	p1.name = name1;
-// 	p2.name = name2;
-console.log("player 1 model", p1);
 
-
-	console.log("player1", p1);
+	console.log("player2", p2);
 
 
 
@@ -41,12 +35,6 @@ console.log("player 1 model", p1);
 	let moveAlong = false;
 });
 
-$(".selectpicker").each(function() {
-	let model1Selected = $("#player1-model option:selected").value;
-	let model2Selected = $("#player2-model option:selected").value;
-	// let p1 = new Robot.Robots.`$(model1Selected)`;
-	// let p2 = new Robot.Robots.`$(model1Selected)`;
-});
 
 
 
