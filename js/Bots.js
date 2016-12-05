@@ -1,7 +1,7 @@
 "use strict";
 /* jshint esversion: 6 */
 
-// var Robot = require('./Battledome.js');
+var Weapon = require('./weapons.js');
 
 // Defining the Base object for any player in the game\
 
@@ -14,7 +14,7 @@ let Battledome = {};
 			this.health = null;
 			this.damage = null;
 		// };
-};
+	};
 
 	Battledome.Player.prototype.setName = (name) => {
 		this.name = name;
@@ -23,7 +23,8 @@ let Battledome = {};
 
 	/* Base ROBOT ------------- */
 	Battledome.Model = function Model() {
-		this.weapon = "shockwave";
+		//trying to add weapon from js file
+		this.weapon = Weapon.shockwave;
 		this.health = 0;
 		this.damage = 0;
 	};
