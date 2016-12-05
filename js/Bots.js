@@ -25,7 +25,6 @@ let Battledome = {};
 	Battledome.Model = function Model() {
 		//trying to add weapon from js file
 		this.weapon = Weapon.shockwave;
-		this.health = 0;
 		this.damage = 0;
 	};
 	Battledome.Model.prototype = new Battledome.Player();
@@ -54,13 +53,13 @@ let Battledome = {};
 		this.speed = 70;
 		this.img = "images/Luna_X_2000.jpeg";
 	};
-	Battledome.Luna_X_2000.protype = new Battledome.Drone();
+	Battledome.Luna_X_2000.prototype = new Battledome.Drone();
 
 	Battledome.MQ9_Reaper = function MQ9_Reaper() {
 		this.cost = "$16.9 million";
 		this.img = "images/MQ9_Reaper.jpeg";
 	};
-	Battledome.MQ9_Reaper.protoype = new Battledome.Drone();
+	Battledome.MQ9_Reaper.prototype = new Battledome.Drone();
 
 		/* BIPEDALS --------- */
 

@@ -15,7 +15,7 @@ function comment(msg) {
 /*-- Setup DOM --*/
 $(document).ready(function(){
 	$("#player--setup").show();
-	$("#card--battleground").hide();
+	$(".card--battleground").hide();
 });
 
 /*-- Function to move to attack screen --*/
@@ -40,7 +40,8 @@ $("#beginAttack").click( function(e) {
 
 	$(".p1-health").html(`${p1.health}`);
     $(".p2-health").html(`${p2.health}`);
-
+    console.log("player health", p1.health);
+debugger
 	if ((p1.name !== "") && (p2.name !== "")) {
 			$("#card--battleground").show();
 			$("#player--setup").hide();
