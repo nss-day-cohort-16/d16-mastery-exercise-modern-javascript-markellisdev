@@ -9,7 +9,7 @@ let Battledome = {};
 
 	Battledome.Player = function(name) {
 		// this.toString = function() {
-			this.name = "Whizzle snips";
+			this.name = "General Cryptor";
 			this.skill = null;
 			this.health = null;
 			this.damage = null;
@@ -51,13 +51,13 @@ let Battledome = {};
 
 	Battledome.Luna_X_2000 = function Luna_X_2000() {
 		this.speed = 70;
-		this.img = `http://www.panzerbaer.de/helper/pix/bw_drohne_luna_katapult-001.jpg`;
+		this.img = "images/Luna_X_2000.jpeg";
 	};
 	Battledome.Luna_X_2000.protype = new Battledome.Drone();
 
 	Battledome.MQ9_Reaper = function MQ9_Reaper() {
 		this.cost = "$16.9 million";
-		this.img = `<img id="lcms_fancybox-image" class="lcms_fancybox-image lcms_fancybox-img" src="/Websites/gaasi/PhotoGallery/4264089/mq9-reaper-weaponized.jpg?02045" alt="USAF MQ-9 Reaper">`;
+		this.img = "images/MQ9_Reaper.jpeg";
 	};
 	Battledome.MQ9_Reaper.protoype = new Battledome.Drone();
 
@@ -76,7 +76,7 @@ let Battledome = {};
 		this.weapon = "superior intelligence"
 		this.skill = "assembly from microbots";
 		this.speed = 45;
-		this.img = `http://images6.fanpop.com/image/photos/38400000/Megabot-big-hero-6-38439105-500-281.jpg`;
+		this.img = "images/Megabot-big-hero-6.jpeg";
 	};
 	Battledome.Megabot.prototype = new Battledome.Bipedal();
 
@@ -84,7 +84,7 @@ let Battledome = {};
 		this.weapon = "electrical scrambler";
 		this.skill = "multiple languages";
 		this.color = "white and blue";
-		this.img = `https://elrincondelmae.files.wordpress.com/2015/12/star_3.jpg`;
+		this.img = "images/R2D2.jpeg";
 	};
 	Battledome.R2D2.prototype = new Battledome.Bipedal();
 
@@ -106,7 +106,7 @@ let Battledome = {};
 		this.skill = "super clean floors";
 		this.shape = "round";
 		this.weapon = "defenseless";
-		this.img = `http://i.imgur.com/hsUooRJ.jpg`;
+		this.img = "images/Roomba980.jpeg";
 	};
 	Battledome.Roomba980.prototype = new Battledome.ATV();
 
@@ -116,7 +116,7 @@ let Battledome = {};
 		this.bullbar = (function () {
 			this.health + 15;
 		});
-		this.img = `https://www.clearpathrobotics.com/wp-content/uploads/2015/09/Grizzly-RUV_mining-in-sand.jpg`;
+		this.img = "images/GrizzlyRUV.jpeg";
 	};
 	Battledome.GrizzlyRUV.prototype = new Battledome.ATV();
 
